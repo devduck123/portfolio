@@ -1,0 +1,127 @@
+@import "https://unpkg.com/open-props";
+@import "https://unpkg.com/open-props/normalize.min.css";
+
+:root {
+  /* access variables with "var(--primary-color)" */
+  --primary-color: red;
+  --secondary-color: green;
+  --tertiary-color: blue;
+  --default-font-size: 16px;
+  --small-font-size: 12px;
+  --big-font-size: 24px;
+  --scale-size: 1.075;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-family: var(--font-sans);
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+ul {
+  list-style-type: none;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+#root,
+#__next {
+  isolation: isolate;
+}
+
+/* ========== CSS for app starts here ========== */
+#headline {
+  display: grid;
+  place-content: center;
+  text-align: center;
+  border-radius: var(--radius-1);
+  padding: 0 var(--size-10) 0 var(--size-9);
+
+  /* background: red; */
+}
+
+#headline > h1 {
+  font-size: var(--font-size-fluid-3);
+  color: var(--grey-9);
+}
+
+#headline > p {
+  font-size: var(--font-size-fluid-0);
+  line-height: var(--font-lineheight-1);
+  color: var(--grey-9);
+  width: var(--size-fluid-10);
+  text-align: center;
+
+  /* background: blue; */
+}
+
+#headline > button {
+  width: var(--size-fluid-8);
+  color: var(--grey-9);
+  background-color: var(--indigo-3);
+  font-size: var(--font-size-fluid-1);
+  box-shadow: var(--shadow-6);
+  border-radius: var(--radius-2);
+  transition: var(--ease-squish-3) 0.4s;
+  /* margin-left: var(--size-fluid-4); */
+  margin-top: var(--size-3);
+  padding: var(--size-1);
+}
+
+#headline > button:hover {
+  transform: scale(var(--scale-size));
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  ::before,
+  ::after {
+    animation-delay: -1ms !important;
+    animation-duration: 1ms !important;
+    animation-iteration-count: 1 !important;
+    background-attachment: initial !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0s !important;
+    transition-delay: 0s !important;
+  }
+}
