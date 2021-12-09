@@ -70,6 +70,32 @@ h6 {
 }
 
 /* ========== CSS for app starts here ========== */
+a:visited {
+  color: var(--grey-2);
+}
+
+nav {
+  background: var(--indigo-3);
+  border-radius: 0 0 36% 36%;
+}
+
+nav > ul {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--font-size-fluid-0);
+  font-weight: var(--font-weight-4);
+  padding: 1% 20% 2% 20%;
+  color: white;
+  
+  /* background: blue; */
+}
+
+nav > ul > li {
+  margin: auto;
+}
+
 #headline {
   display: grid;
   place-content: center;
@@ -96,15 +122,14 @@ h6 {
 }
 
 #headline > button {
-  width: var(--size-fluid-8);
-  color: var(--grey-9);
-  background-color: var(--indigo-3);
+  width: var(--size-fluid-10);
+  color: white;
+  background: var(--indigo-3);
   font-size: var(--font-size-fluid-1);
   font-weight: var(--font-weight-6);
   box-shadow: var(--shadow-6);
   border-radius: var(--radius-2);
   transition: var(--ease-squish-3) 0.4s;
-  margin-left: 25%;
   margin-top: var(--size-3);
   padding: var(--size-1);
 }
