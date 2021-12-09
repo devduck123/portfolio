@@ -82,17 +82,17 @@ h6 {
 
 #headline > h1 {
   font-size: var(--font-size-fluid-3);
+  font-weight: var(--font-weight-8);
   color: var(--grey-9);
 }
 
 #headline > p {
   font-size: var(--font-size-fluid-0);
+  font-weight: var(--font-weight-5);
   line-height: var(--font-lineheight-1);
   color: var(--grey-9);
   width: var(--size-fluid-10);
   text-align: center;
-
-  /* background: blue; */
 }
 
 #headline > button {
@@ -100,10 +100,11 @@ h6 {
   color: var(--grey-9);
   background-color: var(--indigo-3);
   font-size: var(--font-size-fluid-1);
+  font-weight: var(--font-weight-6);
   box-shadow: var(--shadow-6);
   border-radius: var(--radius-2);
   transition: var(--ease-squish-3) 0.4s;
-  /* margin-left: var(--size-fluid-4); */
+  margin-left: 25%;
   margin-top: var(--size-3);
   padding: var(--size-1);
 }
