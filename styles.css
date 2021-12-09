@@ -88,13 +88,13 @@ nav > ul {
   font-weight: var(--font-weight-4);
   padding: 1% 20% 2% 20%;
   color: white;
-  
+
   /* background: blue; */
 }
 
 nav > ul > li {
   margin: auto;
-  transition: var(--ease-elastic-3) .3s;
+  transition: var(--ease-elastic-3) 0.3s;
 }
 
 nav > ul > li:hover {
