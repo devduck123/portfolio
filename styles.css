@@ -88,8 +88,6 @@ nav > ul {
   font-weight: var(--font-weight-4);
   padding: 1% 20% 2% 20%;
   color: white;
-
-  /* background: blue; */
 }
 
 nav > ul > li {
@@ -102,13 +100,12 @@ nav > ul > li:hover {
 }
 
 #headline {
-  display: grid;
-  place-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   text-align: center;
   border-radius: var(--radius-1);
-  padding: 0 var(--size-10) 0 var(--size-9);
-
-  /* background: red; */
 }
 
 #headline > h1 {
@@ -122,12 +119,12 @@ nav > ul > li:hover {
   font-weight: var(--font-weight-5);
   line-height: var(--font-lineheight-1);
   color: var(--grey-9);
-  width: var(--size-fluid-10);
   text-align: center;
+  width: var(--size-fluid-9);
+  padding: var(--size-2);
 }
 
 #headline > button {
-  width: var(--size-fluid-10);
   color: white;
   background: var(--indigo-3);
   font-size: var(--font-size-fluid-1);
