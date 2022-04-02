@@ -1,3 +1,8 @@
+# INACTIVE!!!
+
+# Hosting
+- Netlify @ https://devduck123.netlify.app/
+
 # Personal Portfolio
 - built with Open Props
 
